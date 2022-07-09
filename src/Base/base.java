@@ -38,7 +38,7 @@ public class base {
 	public void launchdriver() throws IOException {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		System.out.println("1111111113451111111111"+driver);
+		System.out.println("1111111113451111eeeeeeeeee111111"+driver);
 	}
 	
 	
