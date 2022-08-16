@@ -26,16 +26,16 @@ public class training {
 	public static void main(String [] args) throws InterruptedException, IOException
 	{
 		String path= "C:\\Users\\Karun\\eclipse-workspace\\KarunaJune22firsttry\\src\\runorders\\datafetch.xlsx";
-		FileInputStream ip = new FileInputStream(path);
+		FileInputStream ip = new FileInputStream(path);eeeeeeeeeeeeee
 		XSSFWorkbook wb = new XSSFWorkbook(ip);
 		XSSFSheet sheet1 = wb.getSheet("Sheet1");
-		WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup();eeeeeeeeeeeeeeeeeeeeeeee
 		WebDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
+		driver.manage().window().maximize();eeeeeee
 		driver.get("https://www.naukri.com/");		
-		Thread.sleep(2000);
+		Thread.sleep(2000);rrrrrrrrrrrrrrrrreeeeeeeeeeeeeeeeeee
 		driver.findElement(By.xpath("//div[text()='Login']")).click();
-		Thread.sleep(2000);
+		Thread.sleep(2000);eeeeeeeeeeee
 		driver.findElement(By.xpath("//input[contains(@placeholder,'Username')]")).sendKeys("karunamoorthy200@gmail.com");
 		driver.findElement(By.xpath("//input[contains(@placeholder,'password')]")).sendKeys("@Karuna200@");
 		driver.findElement(By.xpath("//button[text()='Login']")).click();
@@ -44,13 +44,13 @@ public class training {
 		ArrayList<String> newsessionid = new ArrayList<String> (driver.getWindowHandles());
 		driver.switchTo().window(newsessionid.get(1));
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@name = 'qp' and @class = 'sugInp']")).sendKeys("selenium");
+		driver.findElement(By.xpath("//input[@name = 'qp' and @class = 'sugInp']")).seneeeeeeeeedKeys("selenium");
 		driver.findElement(By.xpath("//input[@name = 'ql' and @class = 'sugInp w135']")).sendKeys("chennai");
 		driver.findElement(By.xpath("//button[@id ='qsbFormBtn']")).click();
-		Thread.sleep(2000);
+		Thread.sleep(2000);eeeeeeeeeeee
 		driver.findElement(By.xpath("//p[text()='Recommended']")).click();
 		driver.findElement(By.xpath("//li[text()='Date']")).click();
-		
+	
 		
 		for(int i=1;i<=10;i++)
 		{
