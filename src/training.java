@@ -50,7 +50,7 @@ public class training {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//p[text()='Recommended']")).click();
 		driver.findElement(By.xpath("//li[text()='Date']")).click();
-		
+	//ffffffffffffffffffffffffffffffffffffffffffffff
 		
 		for(int i=1;i<=10;i++)
 		{
